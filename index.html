@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD&COMPANY</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="./assets/plugin/slick-1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="./assets/plugin/slick-1.8.1/slick/slick-theme.css"/>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/plugin/slick-1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+
+    <header id="navbar" class="hidden lg:text-white" >
+        <div onclick="toggleNav()" class="absolute z-10 w-full h-full lg:hidden" style="background-color: #FCF9EE;"></div>
+        <div class="flex px-5 mx-auto xl:px-0 md:px-10 lg:w-full lg:max-w-7xl ">
+            <h2 id="navIcon" class="">
+                <svg class="h-8 fill-current " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499.63 83.78"><title>FOOD&amp;COMPANY</title><g><g><polygon class="cls-1" points="126.78 69.09 126.98 69.2 130.68 74.02 134.4 69.2 134.58 69.09 136.95 69.09 137.05 69.2 131.71 75.97 131.71 83.37 131.6 83.47 129.75 83.47 129.65 83.37 129.65 75.97 124.31 69.2 124.42 69.09 126.78 69.09"></polygon><path class="cls-1" d="M154.73,76.29a7.61,7.61,0,1,1-7.61-7.51,7.57,7.57,0,0,1,7.61,7.51m-12.84,0a5.24,5.24,0,1,0,5.23-5.35,5.28,5.28,0,0,0-5.23,5.35"></path><path class="cls-1" d="M160.59,69.09l.1.11v7.49c0,3.19,1.95,4.93,4.31,4.93s4.32-1.74,4.32-4.93V69.2l.1-.11h1.85l.1.11v7.9c0,4.21-2.87,6.68-6.37,6.68s-6.36-2.47-6.36-6.68V69.2l.1-.11Z"></path><path class="cls-1" d="M180,69.09c2.87,0,4.72,1.75,4.72,4.11a3.89,3.89,0,0,1-2.46,3.7L187,83.37l-.1.1h-2.47l-.1-.1-4.51-6.06H178v6.06l-.1.1H176l-.1-.1V69.2l.1-.11ZM178,75.26H180c1.54,0,2.36-.82,2.36-2.06s-.82-2-2.36-2H178Z"></path><path class="cls-1" d="M201.59,69.1a7.2,7.2,0,1,1,0,14.37h-4.83l-.1-.1V69.2l.1-.1Zm-2.88,12.32h2.88a5.14,5.14,0,1,0,0-10.27h-2.88Z"></path><path class="cls-1" d="M219.37,69.09l.1.11,5.75,14.17-.1.1h-2.06l-.1-.1-1.33-3.28h-6.37l-1.34,3.28-.1.1h-2l-.11-.1,5.75-14.17.11-.11ZM216.08,78h4.73L218.44,72Z"></path><polygon class="cls-1" points="230.26 69.09 230.37 69.2 230.37 83.37 230.26 83.47 228.41 83.47 228.31 83.37 228.31 69.2 228.41 69.09 230.26 69.09"></polygon><polygon class="cls-1" points="236.86 69.09 236.94 69.18 236.94 81.42 243.64 81.42 243.72 81.52 243.72 83.39 243.64 83.47 234.97 83.47 234.89 83.39 234.89 69.18 234.97 69.09 236.86 69.09"></polygon><polygon class="cls-1" points="248.25 69.09 248.45 69.2 252.15 74.02 255.87 69.2 256.05 69.09 258.41 69.09 258.52 69.2 253.18 75.97 253.18 83.37 253.07 83.47 251.22 83.47 251.12 83.37 251.12 75.97 245.78 69.2 245.88 69.09 248.25 69.09"></polygon><path class="cls-1" d="M280.41,72.59a7.47,7.47,0,0,0-5-1.65,5.34,5.34,0,1,0,.11,10.68,7.23,7.23,0,0,0,3.18-.71v-3.5h-2.77l-.11-.1V75.46l.11-.1h4.72l.1.1v6.68a8.79,8.79,0,0,1-5.23,1.64,7.51,7.51,0,1,1-.11-15,8.44,8.44,0,0,1,5.14,1.34v2.36Z"></path><path class="cls-1" d="M289.15,69.09c2.87,0,4.72,1.75,4.72,4.11a3.9,3.9,0,0,1-2.46,3.7l4.72,6.47-.11.1h-2.46l-.1-.1-4.52-6.06h-1.85v6.06l-.1.1h-1.85l-.11-.1V69.2l.11-.11Zm-2.06,6.17h2.06c1.54,0,2.35-.82,2.35-2.06s-.81-2-2.35-2h-2.06Z"></path><path class="cls-1" d="M313.8,76.29a7.6,7.6,0,1,1-7.6-7.51,7.56,7.56,0,0,1,7.6,7.51m-12.84,0a5.24,5.24,0,1,0,5.24-5.35A5.28,5.28,0,0,0,301,76.29"></path><path class="cls-1" d="M329.53,72.79a7.67,7.67,0,0,0-4.83-1.85,5.34,5.34,0,0,0,0,10.68,7.61,7.61,0,0,0,4.83-1.85l.1.11v2.36a8.29,8.29,0,0,1-4.93,1.54,7.5,7.5,0,1,1,0-15,8.23,8.23,0,0,1,4.93,1.55v2.36Z"></path><polygon class="cls-1" points="342.48 69.09 342.58 69.2 342.58 71.05 342.48 71.15 335.8 71.15 335.8 74.54 340.83 74.54 340.94 74.64 340.94 76.49 340.83 76.59 335.8 76.59 335.8 81.42 343.09 81.42 343.19 81.52 343.19 83.37 343.09 83.47 333.85 83.47 333.74 83.37 333.74 69.2 333.85 69.09 342.48 69.09"></polygon><path class="cls-1" d="M351,69.09c2.87,0,4.72,1.75,4.72,4.11a3.89,3.89,0,0,1-2.46,3.7L358,83.37l-.1.1h-2.47l-.1-.1-4.52-6.06H349v6.06l-.1.1H347l-.1-.1V69.2l.1-.11ZM349,75.26H351c1.54,0,2.36-.82,2.36-2.06s-.82-2-2.36-2H349Z"></path><polygon class="cls-1" points="362.11 69.09 362.31 69.2 366.01 74.02 369.73 69.2 369.91 69.09 372.28 69.09 372.38 69.2 367.04 75.97 367.04 83.37 366.94 83.47 365.09 83.47 364.98 83.37 364.98 75.97 359.65 69.2 359.75 69.09 362.11 69.09"></polygon><polygon class="cls-1" points="5.16 35.15 0.49 35.15 0 34.66 0 1.21 0.49 0.72 20.99 0.72 21.48 1.21 21.48 5.88 20.99 6.37 5.65 6.37 5.65 13.43 17.15 13.43 17.64 13.92 17.64 18.59 17.15 19.08 5.65 19.08 5.65 34.66 5.16 35.15"></polygon><path class="cls-1" d="M51.07,35.87A18.09,18.09,0,0,1,32.89,17.93a18.18,18.18,0,0,1,36.35,0A18.08,18.08,0,0,1,51.07,35.87m0-30a11.94,11.94,0,0,0-11.8,12,11.8,11.8,0,1,0,23.6,0,11.94,11.94,0,0,0-11.8-12"></path><path class="cls-1" d="M98.26,35.87A18.09,18.09,0,0,1,80.08,17.93a18.18,18.18,0,0,1,36.35,0A18.08,18.08,0,0,1,98.26,35.87m0-30a11.94,11.94,0,0,0-11.8,12,11.8,11.8,0,1,0,23.6,0,11.94,11.94,0,0,0-11.8-12"></path><path class="cls-1" d="M142.38,35.15H130.93l-.49-.49V1.21l.49-.49h11.45c10.36,0,18.17,7.4,18.17,17.21s-7.81,17.22-18.17,17.22m-6.29-5.65h6.29c6.84,0,11.8-4.87,11.8-11.57s-5-11.56-11.8-11.56h-6.29Z"></path><path class="cls-1" d="M199.34,32.32H176.15V28.21h23.19Zm-2.55-18.91a29,29,0,0,1-3.08,6.17c1.85,1.85,2.87,2.87,5.13,5.09l-.2.25h-5.55A16.36,16.36,0,0,1,191,23.07c-1.84,1.85-3.08,2.47-6.16,2.47a6.73,6.73,0,0,1-7-6.46c0-2.59,1.23-4,3.49-5.88-1.23-1.43-2.26-2.46-2.26-4.52a6.18,6.18,0,0,1,12.33,0c0,2.47-1.44,3.7-3.28,5.14a30.87,30.87,0,0,0,2.46,2.67,12.33,12.33,0,0,0,1.65-3.29h4.36ZM182.2,19.08a2.53,2.53,0,0,0,2.67,2.35A3.47,3.47,0,0,0,188,20c-1.64-1.65-2.06-2.06-3.9-4.11-1,1-1.85,1.64-1.85,3.2m4.93-10.4A1.75,1.75,0,0,0,185.28,7a1.78,1.78,0,0,0-1.85,1.64c0,1,.62,1.85,1.64,2.88,1.65-1,2.06-1.85,2.06-2.88"></path><path class="cls-1" d="M230.49,35.87a18.08,18.08,0,0,1-18.17-17.94A18.08,18.08,0,0,1,230.49,0a19.62,19.62,0,0,1,11.76,3.68l.18.13V9.72l-.64.64-.3-.25a17.42,17.42,0,0,0-11-4.22,11.94,11.94,0,0,0-11.8,12A12,12,0,0,0,230.49,30a17.42,17.42,0,0,0,11-4.22l.3-.25.64.64v5.91l-.18.13a19.62,19.62,0,0,1-11.76,3.68"></path><path class="cls-1" d="M273.65,35.87a18.08,18.08,0,0,1-18.17-17.94,18.18,18.18,0,0,1,36.35,0,18.08,18.08,0,0,1-18.18,17.94m0-30a12,12,0,0,0-11.8,12,11.8,11.8,0,1,0,23.6,0,11.94,11.94,0,0,0-11.8-12"></path><polygon class="cls-1" points="338.81 35.15 334.14 35.15 333.65 34.66 333.65 9.33 322.5 19.73 321.68 19.73 310.53 9.33 310.53 34.66 310.04 35.15 305.37 35.15 304.88 34.66 304.88 1.21 305.37 0.72 309.81 0.77 310.39 1.08 322.09 12 333.89 1.01 334.56 0.72 338.81 0.72 339.3 1.21 339.3 34.66 338.81 35.15"></polygon><path class="cls-1" d="M359,35.15h-4.67l-.49-.49V1.24l.42-.52h10.56c6.81,0,11.94,4.62,11.94,10.74S371.58,22.2,364.77,22.2h-5.32V34.66Zm.5-18.61h5.32c3.28,0,5.57-2.08,5.57-5.08s-2.29-5.09-5.57-5.09h-5.32Z"></path><path class="cls-1" d="M413.63,35.15h-5.15l-.47-.51-3-7.41H390.72l-3.11,7.55-.36.37H382.1l-.57-.57L395.16,1.09l.37-.37h4.67l.46.51,13.53,33.35ZM393,21.58h9.78L397.86,9Z"></path><polygon class="cls-1" points="456.31 35.15 451.38 35.1 450.75 34.74 431.86 10.08 431.86 34.66 431.37 35.15 426.7 35.15 426.21 34.66 426.21 1.21 426.7 0.72 431.62 0.77 432.25 1.13 451.15 25.79 451.15 1.21 451.64 0.72 456.31 0.72 456.8 1.21 456.8 34.66 456.31 35.15"></polygon><polygon class="cls-1" points="486.52 35.15 481.85 35.15 481.36 34.66 481.36 17.36 468.75 1.36 469.38 0.72 475.26 0.72 475.89 1.13 484.19 11.96 492.66 1.01 493.3 0.72 498.99 0.72 499.63 1.36 487.01 17.36 487.01 34.66 486.52 35.15"></polygon></g></g></svg>                
+            </h2>
+            <ul id="navMenu" class=" lg:text-white">
+                <li><a href="#" class="text-sm font-semibold tracking-widest transition duration-500 hover:text-blue-900 lg:ml-8">ABOUT</a></li>
+                <li><a href="#" class="text-sm font-semibold tracking-widest transition duration-500 hover:text-blue-900 lg:ml-8">STORE</a></li>
+                <li><a href="#" class="text-sm font-semibold tracking-widest transition duration-500 hover:text-blue-900 lg:ml-8">INFORMATION</a></li>
+                <li><a href="#" class="text-sm font-semibold tracking-widest transition duration-500 hover:text-blue-900 lg:ml-8">OUR BUSINESS</a></li>
+                <li><a href="#" class="text-sm font-semibold tracking-widest transition duration-500 hover:text-blue-900 lg:ml-8 ">RECRUIT</a></li>
+                <li><a href="#" class="text-sm font-semibold tracking-widest transition duration-500 hover:text-blue-900 lg:ml-8 ">CONTACT</a></li>
+                <li><a href="#" class="text-sm font-semibold tracking-widest transition duration-500 hover:text-blue-900 lg:ml-8 lg:hidden">ONLINE STORE</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <span id="navBtn" onclick="toggleNav()" class="fixed z-50 grid w-20 h-12 text-xs tracking-widest transform rotate-90 bg-white border shadow-md cursor-pointer lg:hidden place-items-center -right-4 bottom-16">
+        <span class="transform rotate-180">MENU</span>
+    </span>
+
+    <section class="relative ">
+        <div class="fade">
+            <div class="">
+                <div class="relative grid w-full h-screen bg-right bg-cover place-items-center" style="background-image: url(./assets/img/cover_1.jpg);"></div>
+            </div>
+            <div class="">
+                <div class="relative grid w-full h-screen bg-center bg-cover place-items-center" style="background-image: url(./assets/img/cover_2.jpg);"></div>
+            </div>
+            <div class="">
+                <div class="relative grid w-full h-screen bg-center bg-cover place-items-center" style="background-image: url(./assets/img/cover_3.jpg);"></div>
+            </div>
+            <div class="">
+                <div class="relative grid w-full h-screen bg-center bg-cover place-items-center" style="background-image: url(./assets/img/cover_4.jpg);"></div>
+            </div>
+    
+        </div>
+        <div class="absolute inset-0 grid bg-black bg-opacity-25 place-items-center">
+            <div class="flex flex-col items-center text-white">
+                <h1 class="flex items-center space-x-2 text-2xl font-semibold tracking-wider lg:text-4xl">
+                    <svg class="text-white fill-current w-52 md:w-72" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499.63 83.78"><title>FOOD&amp;COMPANY</title><g><g><polygon class="cls-1" points="126.78 69.09 126.98 69.2 130.68 74.02 134.4 69.2 134.58 69.09 136.95 69.09 137.05 69.2 131.71 75.97 131.71 83.37 131.6 83.47 129.75 83.47 129.65 83.37 129.65 75.97 124.31 69.2 124.42 69.09 126.78 69.09"></polygon><path class="cls-1" d="M154.73,76.29a7.61,7.61,0,1,1-7.61-7.51,7.57,7.57,0,0,1,7.61,7.51m-12.84,0a5.24,5.24,0,1,0,5.23-5.35,5.28,5.28,0,0,0-5.23,5.35"></path><path class="cls-1" d="M160.59,69.09l.1.11v7.49c0,3.19,1.95,4.93,4.31,4.93s4.32-1.74,4.32-4.93V69.2l.1-.11h1.85l.1.11v7.9c0,4.21-2.87,6.68-6.37,6.68s-6.36-2.47-6.36-6.68V69.2l.1-.11Z"></path><path class="cls-1" d="M180,69.09c2.87,0,4.72,1.75,4.72,4.11a3.89,3.89,0,0,1-2.46,3.7L187,83.37l-.1.1h-2.47l-.1-.1-4.51-6.06H178v6.06l-.1.1H176l-.1-.1V69.2l.1-.11ZM178,75.26H180c1.54,0,2.36-.82,2.36-2.06s-.82-2-2.36-2H178Z"></path><path class="cls-1" d="M201.59,69.1a7.2,7.2,0,1,1,0,14.37h-4.83l-.1-.1V69.2l.1-.1Zm-2.88,12.32h2.88a5.14,5.14,0,1,0,0-10.27h-2.88Z"></path><path class="cls-1" d="M219.37,69.09l.1.11,5.75,14.17-.1.1h-2.06l-.1-.1-1.33-3.28h-6.37l-1.34,3.28-.1.1h-2l-.11-.1,5.75-14.17.11-.11ZM216.08,78h4.73L218.44,72Z"></path><polygon class="cls-1" points="230.26 69.09 230.37 69.2 230.37 83.37 230.26 83.47 228.41 83.47 228.31 83.37 228.31 69.2 228.41 69.09 230.26 69.09"></polygon><polygon class="cls-1" points="236.86 69.09 236.94 69.18 236.94 81.42 243.64 81.42 243.72 81.52 243.72 83.39 243.64 83.47 234.97 83.47 234.89 83.39 234.89 69.18 234.97 69.09 236.86 69.09"></polygon><polygon class="cls-1" points="248.25 69.09 248.45 69.2 252.15 74.02 255.87 69.2 256.05 69.09 258.41 69.09 258.52 69.2 253.18 75.97 253.18 83.37 253.07 83.47 251.22 83.47 251.12 83.37 251.12 75.97 245.78 69.2 245.88 69.09 248.25 69.09"></polygon><path class="cls-1" d="M280.41,72.59a7.47,7.47,0,0,0-5-1.65,5.34,5.34,0,1,0,.11,10.68,7.23,7.23,0,0,0,3.18-.71v-3.5h-2.77l-.11-.1V75.46l.11-.1h4.72l.1.1v6.68a8.79,8.79,0,0,1-5.23,1.64,7.51,7.51,0,1,1-.11-15,8.44,8.44,0,0,1,5.14,1.34v2.36Z"></path><path class="cls-1" d="M289.15,69.09c2.87,0,4.72,1.75,4.72,4.11a3.9,3.9,0,0,1-2.46,3.7l4.72,6.47-.11.1h-2.46l-.1-.1-4.52-6.06h-1.85v6.06l-.1.1h-1.85l-.11-.1V69.2l.11-.11Zm-2.06,6.17h2.06c1.54,0,2.35-.82,2.35-2.06s-.81-2-2.35-2h-2.06Z"></path><path class="cls-1" d="M313.8,76.29a7.6,7.6,0,1,1-7.6-7.51,7.56,7.56,0,0,1,7.6,7.51m-12.84,0a5.24,5.24,0,1,0,5.24-5.35A5.28,5.28,0,0,0,301,76.29"></path><path class="cls-1" d="M329.53,72.79a7.67,7.67,0,0,0-4.83-1.85,5.34,5.34,0,0,0,0,10.68,7.61,7.61,0,0,0,4.83-1.85l.1.11v2.36a8.29,8.29,0,0,1-4.93,1.54,7.5,7.5,0,1,1,0-15,8.23,8.23,0,0,1,4.93,1.55v2.36Z"></path><polygon class="cls-1" points="342.48 69.09 342.58 69.2 342.58 71.05 342.48 71.15 335.8 71.15 335.8 74.54 340.83 74.54 340.94 74.64 340.94 76.49 340.83 76.59 335.8 76.59 335.8 81.42 343.09 81.42 343.19 81.52 343.19 83.37 343.09 83.47 333.85 83.47 333.74 83.37 333.74 69.2 333.85 69.09 342.48 69.09"></polygon><path class="cls-1" d="M351,69.09c2.87,0,4.72,1.75,4.72,4.11a3.89,3.89,0,0,1-2.46,3.7L358,83.37l-.1.1h-2.47l-.1-.1-4.52-6.06H349v6.06l-.1.1H347l-.1-.1V69.2l.1-.11ZM349,75.26H351c1.54,0,2.36-.82,2.36-2.06s-.82-2-2.36-2H349Z"></path><polygon class="cls-1" points="362.11 69.09 362.31 69.2 366.01 74.02 369.73 69.2 369.91 69.09 372.28 69.09 372.38 69.2 367.04 75.97 367.04 83.37 366.94 83.47 365.09 83.47 364.98 83.37 364.98 75.97 359.65 69.2 359.75 69.09 362.11 69.09"></polygon><polygon class="cls-1" points="5.16 35.15 0.49 35.15 0 34.66 0 1.21 0.49 0.72 20.99 0.72 21.48 1.21 21.48 5.88 20.99 6.37 5.65 6.37 5.65 13.43 17.15 13.43 17.64 13.92 17.64 18.59 17.15 19.08 5.65 19.08 5.65 34.66 5.16 35.15"></polygon><path class="cls-1" d="M51.07,35.87A18.09,18.09,0,0,1,32.89,17.93a18.18,18.18,0,0,1,36.35,0A18.08,18.08,0,0,1,51.07,35.87m0-30a11.94,11.94,0,0,0-11.8,12,11.8,11.8,0,1,0,23.6,0,11.94,11.94,0,0,0-11.8-12"></path><path class="cls-1" d="M98.26,35.87A18.09,18.09,0,0,1,80.08,17.93a18.18,18.18,0,0,1,36.35,0A18.08,18.08,0,0,1,98.26,35.87m0-30a11.94,11.94,0,0,0-11.8,12,11.8,11.8,0,1,0,23.6,0,11.94,11.94,0,0,0-11.8-12"></path><path class="cls-1" d="M142.38,35.15H130.93l-.49-.49V1.21l.49-.49h11.45c10.36,0,18.17,7.4,18.17,17.21s-7.81,17.22-18.17,17.22m-6.29-5.65h6.29c6.84,0,11.8-4.87,11.8-11.57s-5-11.56-11.8-11.56h-6.29Z"></path><path class="cls-1" d="M199.34,32.32H176.15V28.21h23.19Zm-2.55-18.91a29,29,0,0,1-3.08,6.17c1.85,1.85,2.87,2.87,5.13,5.09l-.2.25h-5.55A16.36,16.36,0,0,1,191,23.07c-1.84,1.85-3.08,2.47-6.16,2.47a6.73,6.73,0,0,1-7-6.46c0-2.59,1.23-4,3.49-5.88-1.23-1.43-2.26-2.46-2.26-4.52a6.18,6.18,0,0,1,12.33,0c0,2.47-1.44,3.7-3.28,5.14a30.87,30.87,0,0,0,2.46,2.67,12.33,12.33,0,0,0,1.65-3.29h4.36ZM182.2,19.08a2.53,2.53,0,0,0,2.67,2.35A3.47,3.47,0,0,0,188,20c-1.64-1.65-2.06-2.06-3.9-4.11-1,1-1.85,1.64-1.85,3.2m4.93-10.4A1.75,1.75,0,0,0,185.28,7a1.78,1.78,0,0,0-1.85,1.64c0,1,.62,1.85,1.64,2.88,1.65-1,2.06-1.85,2.06-2.88"></path><path class="cls-1" d="M230.49,35.87a18.08,18.08,0,0,1-18.17-17.94A18.08,18.08,0,0,1,230.49,0a19.62,19.62,0,0,1,11.76,3.68l.18.13V9.72l-.64.64-.3-.25a17.42,17.42,0,0,0-11-4.22,11.94,11.94,0,0,0-11.8,12A12,12,0,0,0,230.49,30a17.42,17.42,0,0,0,11-4.22l.3-.25.64.64v5.91l-.18.13a19.62,19.62,0,0,1-11.76,3.68"></path><path class="cls-1" d="M273.65,35.87a18.08,18.08,0,0,1-18.17-17.94,18.18,18.18,0,0,1,36.35,0,18.08,18.08,0,0,1-18.18,17.94m0-30a12,12,0,0,0-11.8,12,11.8,11.8,0,1,0,23.6,0,11.94,11.94,0,0,0-11.8-12"></path><polygon class="cls-1" points="338.81 35.15 334.14 35.15 333.65 34.66 333.65 9.33 322.5 19.73 321.68 19.73 310.53 9.33 310.53 34.66 310.04 35.15 305.37 35.15 304.88 34.66 304.88 1.21 305.37 0.72 309.81 0.77 310.39 1.08 322.09 12 333.89 1.01 334.56 0.72 338.81 0.72 339.3 1.21 339.3 34.66 338.81 35.15"></polygon><path class="cls-1" d="M359,35.15h-4.67l-.49-.49V1.24l.42-.52h10.56c6.81,0,11.94,4.62,11.94,10.74S371.58,22.2,364.77,22.2h-5.32V34.66Zm.5-18.61h5.32c3.28,0,5.57-2.08,5.57-5.08s-2.29-5.09-5.57-5.09h-5.32Z"></path><path class="cls-1" d="M413.63,35.15h-5.15l-.47-.51-3-7.41H390.72l-3.11,7.55-.36.37H382.1l-.57-.57L395.16,1.09l.37-.37h4.67l.46.51,13.53,33.35ZM393,21.58h9.78L397.86,9Z"></path><polygon class="cls-1" points="456.31 35.15 451.38 35.1 450.75 34.74 431.86 10.08 431.86 34.66 431.37 35.15 426.7 35.15 426.21 34.66 426.21 1.21 426.7 0.72 431.62 0.77 432.25 1.13 451.15 25.79 451.15 1.21 451.64 0.72 456.31 0.72 456.8 1.21 456.8 34.66 456.31 35.15"></polygon><polygon class="cls-1" points="486.52 35.15 481.85 35.15 481.36 34.66 481.36 17.36 468.75 1.36 469.38 0.72 475.26 0.72 475.89 1.13 484.19 11.96 492.66 1.01 493.3 0.72 498.99 0.72 499.63 1.36 487.01 17.36 487.01 34.66 486.52 35.15"></polygon></g></g></svg>                
+                </h1>
+            </div>
+        </div>       
+    </section>
+
+    <section class="grid max-w-6xl mx-auto md:px-10 md:gap-5 lg:gap-12 md:py-24 lg:grid-cols-2 md:items-center">
+        <div class="flex flex-col items-start px-5 py-12 space-y-6 md:px-0 font-mplus">
+            <h2 class="text-lg font-bold leading-loose tracking-widest md:text-xl">
+                きっかけをつくる、 <br>
+                グローサリーストア。
+            </h2>
+            <div class="flex flex-col space-y-4 text-xs">
+                <p class="leading-loose tracking-widest">
+                    いろんな情報が溢れるいまだから、 <br>
+                    食べ物をつくる人、売る人、買い物に来る人、料理する人、食べる人、 <br>
+                    そんなすべての人がつながって、本当にいいものや、おいしいものってなんだろう？<br>
+                    を一緒に考えていきたい。    
+                </p>
+                <p class="leading-loose tracking-widest">
+                    ふらりと立ち寄って、おしゃべりしながらおいしいものの知識を増やしたり、 旬の食材から晩ごはんのインスピレーションをわかせたり。
+                </p>
+                <p class="leading-loose tracking-widest">
+                    そんなきっかけの場が、<br>
+                    わたしたちのグローサリーストア*です。
+                </p>
+                <p class="leading-loose tracking-widest">
+                    気持ちいい「いただきます」を、あなたの食卓へ。
+                </p>
+            </div>
+            <div class="flex flex-col space-y-4 text-xs md:hidden">
+                <h3 class="text-sm font-bold leading-loose tracking-widest">*グローサリーストアとは？</h3>
+                <p class="leading-loose tracking-widest">
+                    私たちが考えるグローサリーストアは、個人商店のような人間味溢れるコミュニケーションを大事にしながら適度な利便性もバランスよく融合させた食料品店です。
+                </p>
+            </div>
+            <div class="flex-col hidden pt-4 space-y-4 text-sm md:flex">
+                <h2 class="text-lg font-semibold">
+                    WHERE GOOD FOOD AND GOOD COMPANY <br>
+                    BRING PEOPLE TOGETHER.</h2>
+                <p class="leading-relaxed text-justify">
+                    In this age of information abundance, we’ve created a place where all those connected to food: the producer, purveyor, buyer, cook, and consumer: could collectively explore the definition of truly good food. Whether you drop by on a whim and end up trading delicious food tips, or get inspired for dinner from the seasonal produce on our shelves, we invite you (with open arms) to engage in a refreshed understanding of appreciating the simple act of eating quality food in the comfort of good company.
+                </p>
+            </div>
+            <div class="pt-6">
+                <a href="#" class="grid h-10 px-4 text-xs font-semibold tracking-widest text-blue-900 transition duration-500 border border-blue-900 place-items-center hover:bg-blue-900 hover:text-white">ABOUT FOOD&COMPANY</a>
+            </div>
+        </div>
+        <div class="w-full h-full overflow-hidden ">
+            <img onclick="openImg(this)" class="cursor-pointer lg:h-full lg:object-cover lg:object-center" src="./assets/img/intro.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="flex flex-col px-5 py-12 md:py-24 place-items-start"  style="background-color: #FCF9EE;">
+        <div class="w-full max-w-6xl mx-auto space-y-12 md:px-10">
+
+            <div class="flex flex-col items-start md:flex-row md:items-center md:space-x-6">
+                <h2 class="mb-4 text-lg font-semibold tracking-widest md:m-0">INFORMATION</h2>
+                <div class="flex flex-wrap items-center mb-4 text-xs md:mb-0">
+                    <a href="#" class="mb-2 mr-2 font-semibold text-blue-900 md:mb-0">#EVENT</a>
+                    <a href="#" class="mb-2 mr-2 font-semibold text-blue-900 md:mb-0">#FAIR</a>
+                    <a href="#" class="mb-2 mr-2 font-semibold text-blue-900 md:mb-0">#RECRUIT</a>
+                    <a href="#" class="mb-2 mr-2 font-semibold text-blue-900 md:mb-0">@GAKUDAI</a>
+                    <a href="#" class="mb-2 mr-2 font-semibold text-blue-900 md:mb-0">@SHINJUKU</a>
+                    <a href="#" class="mb-2 mr-2 font-semibold text-blue-900 md:mb-0">@SHONAN</a>
+                </div>
+                <a href="#" class="grid h-8 px-4 text-xs font-semibold tracking-widest text-blue-900 transition duration-500 border border-blue-900 place-items-center hover:bg-blue-900 hover:text-white">VIEW ALL</a>    
+            </div>
+
+            <div class="flex flex-col space-y-12 lg:flex-row lg:space-x-12">
+
+                <a href="#" class="big-article">
+                    <div class="mb-4 bg-blue-900">
+                        <img class="" src="./assets/img/0309_IMG_4577_HH-800x800.jpg" alt="">
+                    </div>
+                    <div class="home-article-details">
+                        <h5 class="text-xs">2021.03.7</h5>
+                        <h3 class="font-semibold">営業時間のお知らせ</h3>
+                        <div class="flex items-center text-xs">
+                            <span class="mr-2 font-semibold text-blue-900 md:mb-0">@GAKUDAI</span>
+                            <span class="mr-2 font-semibold text-blue-900 md:mb-0">@SHINJUKU</span>
+                            <span class="mr-2 font-semibold text-blue-900 md:mb-0">@SHONAN</span>
+                        </div>
+                        <p class="text-sm leading-relaxed tracking-widest text-2l">現在、FOOD&COMPANYは感染症による緊急事態宣言を受けて、下記時間にて営業しております。ご来店の際はご注意くださいますようお願いいたします。 《学芸大学店》全日 11:00-21:00 《湘南T-SITE...</p>
+                    </div>
+                </a>
+
+                <div class="grid grid-cols-2 gap-5 lg:gap-12">
+                    <a href="#" class="little-article ">
+                        <img class="w-full mb-4" src="./assets/img/WEBSITE-800x800.jpg" alt="">
+                        <div class="home-article-details">
+                            <h5 class="text-xs">2020.11.15</h5>
+                            <h3 class="text-xs font-semibold tracking-widest">Winter Fair 2020</h3>
+                            <div class="flex items-center text-xs">
+                                <span class="mr-2 font-semibold text-blue-900 md:mb-0">#FAIR</span>
+                                <span class="mr-2 font-semibold text-blue-900 md:mb-0">@SHONAN</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="little-article ">
+                        <img class="w-full mb-4" src="./assets/img/mishmash_144dpi-800x800.jpg" alt="">
+                        <div class="home-article-details">
+                            <h5 class="text-xs">2020.08.29</h5>
+                            <h3 class="text-xs font-semibold tracking-widest">【イベント出店】9月5日(土)6日(日) mishmash / Holiday Food Market に出店します</h3>
+                            <div class="flex items-center text-xs">
+                                <span class="mr-2 font-semibold text-blue-900 md:mb-0">#EVENT</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="little-article ">
+                        <img class="w-full mb-4" src="./assets/img/243-web-scaled-e1593922177901.jpg" alt="">
+                        <div class="home-article-details">
+                            <h5 class="text-xs">2020.07.5</h5>
+                            <h3 class="text-xs font-semibold tracking-widest">夏のおくりもの</h3>
+                            <div class="flex items-center text-xs">
+                                <span class="mr-2 font-semibold text-blue-900 md:mb-0">#FAIR</span>
+                                <span class="mr-2 font-semibold text-blue-900 md:mb-0">@SHONAN</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="little-article ">
+                        <img class="w-full mb-4" src="./assets/img/0114_IMG_1358_HH-800x800.jpg" alt="">
+                        <div class="home-article-details">
+                            <h5 class="text-xs">2020.04.21</h5>
+                            <h3 class="text-xs font-semibold tracking-widest">調理スタッフ募集のお知らせ</h3>
+                            <div class="flex items-center text-xs">
+                                <span class="mr-2 font-semibold text-blue-900 md:mb-0">#RECRUIT</span>
+                                <span class="mr-2 font-semibold text-blue-900 md:mb-0">@SHINJUKU</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+
+            </div>     
+
+        </div>        
+    </section>
+    
+    <section class="flex flex-col px-5 py-12 md:py-24 place-items-start">
+        <div class="flex flex-col w-full max-w-6xl mx-auto space-y-5 md:space-y-24 md:px-10">
+            <a href="#" class="relative flex items-center group">
+                <div class="flex-shrink-0 w-full md:w-4/5">
+                    <div class="bg-blue-900 sp-container">
+                        <div class="absolute inset-0 flex items-center">
+                            <img class="oc-pic" src="./assets/img/pic_shop_gakudai.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-0 grid bg-black bg-opacity-25 md:ml-auto md:static md:bg-opacity-0 place-items-center">
+                    <div class="store-desc">
+                        <h2 class="flex flex-col items-center mb-4 text-xl font-semibold tracking-wider lg:text-4xl">
+                            <svg class="fill-current store-desc w-28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.72 45.2"><title>FOOD&amp;COMPANY</title><g><g><polygon class="cls-1" points="4.07 20.39 1.36 20.39 1.07 20.11 1.07 0.7 1.36 0.42 13.25 0.42 13.53 0.7 13.53 3.41 13.25 3.69 4.35 3.69 4.35 7.79 11.02 7.79 11.31 8.07 11.31 10.79 11.02 11.07 4.35 11.07 4.35 20.11 4.07 20.39"></polygon><path class="cls-1" d="M30.7,20.81A10.49,10.49,0,0,1,20.16,10.4a10.55,10.55,0,0,1,21.09,0A10.49,10.49,0,0,1,30.7,20.81m0-17.39a6.92,6.92,0,0,0-6.84,7,6.85,6.85,0,1,0,13.69,0,6.92,6.92,0,0,0-6.85-7"></path><path class="cls-1" d="M58.08,20.81A10.49,10.49,0,0,1,47.54,10.4a10.54,10.54,0,0,1,21.08,0A10.49,10.49,0,0,1,58.08,20.81m0-17.39a6.91,6.91,0,0,0-6.84,7,6.85,6.85,0,1,0,13.69,0,6.92,6.92,0,0,0-6.85-7"></path><path class="cls-1" d="M83.68,20.39H77l-.29-.28V.7L77,.42h6.64c6,0,10.54,4.29,10.54,10s-4.53,10-10.54,10M80,17.11h3.65a6.56,6.56,0,0,0,6.85-6.71,6.55,6.55,0,0,0-6.85-6.7H80Z"></path><path class="cls-1" d="M116.72,18.75H103.27V16.36h13.45Zm-1.47-11a17.28,17.28,0,0,1-1.79,3.58c1.07,1.07,1.67,1.67,3,3l-.12.15H113.1a9,9,0,0,1-1.19-1.08,4.13,4.13,0,0,1-3.58,1.43,3.91,3.91,0,0,1-4.06-3.74c0-1.5.72-2.34,2-3.41A3.76,3.76,0,0,1,105,5a3.59,3.59,0,0,1,7.16,0c0,1.42-.84,2.14-1.91,3a19.87,19.87,0,0,0,1.43,1.55,7,7,0,0,0,1-1.91h2.53Zm-8.47,3.29a1.47,1.47,0,0,0,1.55,1.36,2,2,0,0,0,1.79-.83c-1-1-1.19-1.2-2.27-2.39-.59.59-1.07.95-1.07,1.86m2.86-6a1,1,0,0,0-1.07-1,1,1,0,0,0-1.07,1,2.41,2.41,0,0,0,1,1.66c1-.59,1.19-1.07,1.19-1.66"></path><path class="cls-1" d="M7.38,45.2a7.29,7.29,0,1,1,0-14.57,8,8,0,0,1,4.78,1.5l.07,0v2.4l-.26.26-.12-.1A7.08,7.08,0,0,0,7.38,33a4.89,4.89,0,0,0,0,9.78,7.08,7.08,0,0,0,4.47-1.71L12,41l.26.25v2.41l-.07.05A8,8,0,0,1,7.38,45.2"></path><path class="cls-1" d="M24.92,45.2a7.29,7.29,0,1,1,7.38-7.28,7.35,7.35,0,0,1-7.38,7.28m0-12.17a4.89,4.89,0,1,0,4.79,4.89A4.85,4.85,0,0,0,24.92,33"></path><polygon class="cls-1" points="51.39 44.91 49.49 44.91 49.29 44.71 49.29 34.42 44.76 38.65 44.43 38.65 39.9 34.42 39.9 44.71 39.7 44.91 37.8 44.91 37.6 44.71 37.6 31.13 37.8 30.93 39.61 30.94 39.84 31.07 44.6 35.51 49.39 31.04 49.66 30.93 51.39 30.93 51.59 31.13 51.59 44.71 51.39 44.91"></polygon><path class="cls-1" d="M59.57,44.91h-1.9l-.19-.2V31.14l.16-.21h4.3c2.76,0,4.85,1.87,4.85,4.36s-2.09,4.36-4.85,4.36H59.77v5.06Zm.2-7.56h2.17a2.07,2.07,0,1,0,0-4.13H59.77Z"></path><path class="cls-1" d="M81.79,44.91h-2.1l-.19-.2-1.22-3h-5.8l-1.26,3.06-.15.15H69l-.23-.23,5.53-13.61.15-.14h1.9l.19.2L82,44.68Zm-8.4-5.51h4l-2-5.09Z"></path><polygon class="cls-1" points="99.13 44.91 97.13 44.89 96.87 44.75 89.19 34.73 89.19 44.71 89 44.91 87.1 44.91 86.9 44.71 86.9 31.13 87.1 30.93 89.1 30.94 89.35 31.09 97.03 41.11 97.03 31.13 97.23 30.93 99.13 30.93 99.33 31.13 99.33 44.71 99.13 44.91"></polygon><polygon class="cls-1" points="111.4 44.91 109.5 44.91 109.31 44.71 109.31 37.69 104.18 31.18 104.44 30.93 106.83 30.93 107.08 31.09 110.45 35.49 113.89 31.05 114.16 30.93 116.47 30.93 116.72 31.18 111.6 37.69 111.6 44.71 111.4 44.91"></polygon></g></g></svg>
+                        </h2>
+                        <div class="flex mb-6 space-x-1">
+                            <p class="text-xs font-semibold tracking-widest tr-right">@GAKUDAI</p>
+                            <p class="text-lg font-medium leading-relaxed tracking-widest v-text font-mplus md:text-xl">学芸大学店</p>
+                        </div>
+                        <div class="store-btn">STORE INFO</div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="relative flex items-center group md:flex-row-reverse">
+                <div class="flex-shrink-0 w-full md:w-4/5">
+                    <div class="bg-blue-900 sp-container">
+                        <div class="absolute inset-0 flex items-center">
+                            <img class="oc-pic" src="./assets/img/pic_shop_shonan.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-0 grid bg-black bg-opacity-25 md:mr-auto md:static md:bg-opacity-0 place-items-center">
+                    <div class="store-desc">
+                        <h2 class="flex flex-col items-center mb-4 text-xl font-semibold tracking-wider lg:text-4xl">
+                            <svg class="fill-current store-desc w-28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.72 45.2"><title>FOOD&amp;COMPANY</title><g><g><polygon class="cls-1" points="4.07 20.39 1.36 20.39 1.07 20.11 1.07 0.7 1.36 0.42 13.25 0.42 13.53 0.7 13.53 3.41 13.25 3.69 4.35 3.69 4.35 7.79 11.02 7.79 11.31 8.07 11.31 10.79 11.02 11.07 4.35 11.07 4.35 20.11 4.07 20.39"></polygon><path class="cls-1" d="M30.7,20.81A10.49,10.49,0,0,1,20.16,10.4a10.55,10.55,0,0,1,21.09,0A10.49,10.49,0,0,1,30.7,20.81m0-17.39a6.92,6.92,0,0,0-6.84,7,6.85,6.85,0,1,0,13.69,0,6.92,6.92,0,0,0-6.85-7"></path><path class="cls-1" d="M58.08,20.81A10.49,10.49,0,0,1,47.54,10.4a10.54,10.54,0,0,1,21.08,0A10.49,10.49,0,0,1,58.08,20.81m0-17.39a6.91,6.91,0,0,0-6.84,7,6.85,6.85,0,1,0,13.69,0,6.92,6.92,0,0,0-6.85-7"></path><path class="cls-1" d="M83.68,20.39H77l-.29-.28V.7L77,.42h6.64c6,0,10.54,4.29,10.54,10s-4.53,10-10.54,10M80,17.11h3.65a6.56,6.56,0,0,0,6.85-6.71,6.55,6.55,0,0,0-6.85-6.7H80Z"></path><path class="cls-1" d="M116.72,18.75H103.27V16.36h13.45Zm-1.47-11a17.28,17.28,0,0,1-1.79,3.58c1.07,1.07,1.67,1.67,3,3l-.12.15H113.1a9,9,0,0,1-1.19-1.08,4.13,4.13,0,0,1-3.58,1.43,3.91,3.91,0,0,1-4.06-3.74c0-1.5.72-2.34,2-3.41A3.76,3.76,0,0,1,105,5a3.59,3.59,0,0,1,7.16,0c0,1.42-.84,2.14-1.91,3a19.87,19.87,0,0,0,1.43,1.55,7,7,0,0,0,1-1.91h2.53Zm-8.47,3.29a1.47,1.47,0,0,0,1.55,1.36,2,2,0,0,0,1.79-.83c-1-1-1.19-1.2-2.27-2.39-.59.59-1.07.95-1.07,1.86m2.86-6a1,1,0,0,0-1.07-1,1,1,0,0,0-1.07,1,2.41,2.41,0,0,0,1,1.66c1-.59,1.19-1.07,1.19-1.66"></path><path class="cls-1" d="M7.38,45.2a7.29,7.29,0,1,1,0-14.57,8,8,0,0,1,4.78,1.5l.07,0v2.4l-.26.26-.12-.1A7.08,7.08,0,0,0,7.38,33a4.89,4.89,0,0,0,0,9.78,7.08,7.08,0,0,0,4.47-1.71L12,41l.26.25v2.41l-.07.05A8,8,0,0,1,7.38,45.2"></path><path class="cls-1" d="M24.92,45.2a7.29,7.29,0,1,1,7.38-7.28,7.35,7.35,0,0,1-7.38,7.28m0-12.17a4.89,4.89,0,1,0,4.79,4.89A4.85,4.85,0,0,0,24.92,33"></path><polygon class="cls-1" points="51.39 44.91 49.49 44.91 49.29 44.71 49.29 34.42 44.76 38.65 44.43 38.65 39.9 34.42 39.9 44.71 39.7 44.91 37.8 44.91 37.6 44.71 37.6 31.13 37.8 30.93 39.61 30.94 39.84 31.07 44.6 35.51 49.39 31.04 49.66 30.93 51.39 30.93 51.59 31.13 51.59 44.71 51.39 44.91"></polygon><path class="cls-1" d="M59.57,44.91h-1.9l-.19-.2V31.14l.16-.21h4.3c2.76,0,4.85,1.87,4.85,4.36s-2.09,4.36-4.85,4.36H59.77v5.06Zm.2-7.56h2.17a2.07,2.07,0,1,0,0-4.13H59.77Z"></path><path class="cls-1" d="M81.79,44.91h-2.1l-.19-.2-1.22-3h-5.8l-1.26,3.06-.15.15H69l-.23-.23,5.53-13.61.15-.14h1.9l.19.2L82,44.68Zm-8.4-5.51h4l-2-5.09Z"></path><polygon class="cls-1" points="99.13 44.91 97.13 44.89 96.87 44.75 89.19 34.73 89.19 44.71 89 44.91 87.1 44.91 86.9 44.71 86.9 31.13 87.1 30.93 89.1 30.94 89.35 31.09 97.03 41.11 97.03 31.13 97.23 30.93 99.13 30.93 99.33 31.13 99.33 44.71 99.13 44.91"></polygon><polygon class="cls-1" points="111.4 44.91 109.5 44.91 109.31 44.71 109.31 37.69 104.18 31.18 104.44 30.93 106.83 30.93 107.08 31.09 110.45 35.49 113.89 31.05 114.16 30.93 116.47 30.93 116.72 31.18 111.6 37.69 111.6 44.71 111.4 44.91"></polygon></g></g></svg>
+                        </h2>
+                        <div class="flex mb-6 space-x-1">
+                            <p class="text-xs font-semibold tracking-widest tr-right">@SHONAN</p>
+                            <p class="flex flex-col items-center text-lg font-medium leading-relaxed tracking-widest font-mplus"><span class="tracking-widest v-text font-mplus">湘南 </span> <span class="tracking-widest tr-right">T-SITE</span>店</p>
+                        </div>
+                        <div class="store-btn">STORE INFO</div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="relative flex items-center group">
+                <div class="flex-shrink-0 w-full md:w-4/5">
+                    <div class="bg-blue-900 sp-container">
+                        <div class="absolute inset-0 flex items-center">
+                            <img class="oc-pic" src="./assets/img/pic_shop_gakudai.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-0 grid bg-black bg-opacity-25 md:ml-auto md:static md:bg-opacity-0 place-items-center">
+                    <div class="store-desc">
+                        <h2 class="flex flex-col items-center mb-4 text-xl font-semibold tracking-wider lg:text-4xl">
+                            <svg class="fill-current store-desc w-28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.72 50.85"><title>FOOD&amp;COMPANY MiNi</title><g><g><path class="cls-1" d="M26.46,42.25a2.38,2.38,0,1,0,2.33,2.37A2.35,2.35,0,0,0,26.46,42.25Z"></path><path class="cls-1" d="M17.16,42.25a2.38,2.38,0,1,0,2.32,2.37A2.35,2.35,0,0,0,17.16,42.25Z"></path><path class="cls-1" d="M79,42.34H78v2H79a1,1,0,1,0,0-2Z"></path><path class="cls-1" d="M61,42.25a2.38,2.38,0,1,0,2.33,2.37A2.35,2.35,0,0,0,61,42.25Z"></path><path class="cls-1" d="M43.54,45.31a.7.7,0,0,0,.61-.28c-.33-.33-.41-.41-.77-.81-.21.2-.37.32-.37.63A.5.5,0,0,0,43.54,45.31Z"></path><path class="cls-1" d="M108.75,38.4H3.58a2,2,0,0,0-1.95,1.66L0,49.19a1.34,1.34,0,0,0,1.37,1.66H106.56a2,2,0,0,0,2-1.66l1.61-9.13A1.34,1.34,0,0,0,108.75,38.4ZM42.4,42.8a1.22,1.22,0,0,1,2.43,0,1.24,1.24,0,0,1-.64,1,6.35,6.35,0,0,0,.48.53,2.82,2.82,0,0,0,.33-.65h.86l0,0A5.77,5.77,0,0,1,45.28,45l1,1,0,0H45.16a4.23,4.23,0,0,1-.41-.36,1.4,1.4,0,0,1-1.21.48,1.33,1.33,0,0,1-1.38-1.27,1.41,1.41,0,0,1,.69-1.16A1.29,1.29,0,0,1,42.4,42.8Zm-31.08-.55-.1.09h-3v1.39h2.27l.09.1v.92l-.09.1H8.2v3.07l-.1.1H7.18l-.1-.1V41.33l.1-.1h4l.1.1Zm5.84,5.91a3.54,3.54,0,1,1,3.58-3.54A3.57,3.57,0,0,1,17.16,48.16Zm9.3,0A3.54,3.54,0,1,1,30,44.62,3.56,3.56,0,0,1,26.46,48.16Zm8.7-.14H32.9l-.09-.1v-6.6l.09-.09h2.26a3.4,3.4,0,1,1,0,6.79Zm11.23-.56H41.82v-.81h4.57ZM54.89,43l-.13.13-.06-.05a3.4,3.4,0,0,0-2.17-.83,2.38,2.38,0,0,0,0,4.75,3.46,3.46,0,0,0,2.17-.83l.06-.05.13.12v1.17l0,0a3.8,3.8,0,0,1-2.32.73,3.54,3.54,0,1,1,0-7.07,3.85,3.85,0,0,1,2.32.72l0,0ZM61,48.16a3.54,3.54,0,1,1,3.59-3.54A3.57,3.57,0,0,1,61,48.16ZM74,47.92l-.1.1H73l-.1-.1v-5l-2.2,2h-.15l-2.2-2v5l-.1.1H67.3l-.1-.1V41.33l.1-.1h.87l.12.06,2.31,2.15,2.32-2.16.13-.06h.84l.1.1Zm5-2.46H78v2.46l-.1.1h-.92l-.09-.1V41.33l.08-.1H79a2.13,2.13,0,1,1,0,4.23ZM88.64,48h-1l-.09-.1-.6-1.46H84.13l-.62,1.48-.07.08h-1l-.11-.11L85,41.3l.08-.07H86l.09.1,2.66,6.58Zm8.52-.1-.1.1h-1L96,47.94l-3.72-4.86v4.84l-.1.1h-.92l-.09-.1V41.33l.09-.1h1l.13.07L96,46.17V41.33l.1-.1h.92l.1.1Zm6-3.41v3.41L103,48h-.92l-.1-.1V44.51l-2.49-3.16.13-.12h1.16l.12.08,1.64,2.13,1.67-2.15.12-.06h1.13l.12.12Z"></path><path class="cls-1" d="M44,42.8a.35.35,0,0,0-.36-.33.36.36,0,0,0-.37.33c0,.2.13.36.33.57C43.9,43.16,44,43,44,42.8Z"></path><path class="cls-1" d="M35.16,42.34H33.92V46.9h1.24a2.28,2.28,0,1,0,0-4.56Z"></path><polygon class="cls-1" points="84.57 45.34 86.5 45.34 85.54 42.87 84.57 45.34"></polygon><path class="cls-1" d="M4.35,35.45H8.48a1.38,1.38,0,0,0,1.3-1.07l3.94-16.23,7.65,17a1.29,1.29,0,0,0,1.21.77h.83a1.28,1.28,0,0,0,1.23-.81l7.54-16.94,4,16.25a1.46,1.46,0,0,0,1.33,1h4.18A1.33,1.33,0,0,0,42.75,35,1.34,1.34,0,0,0,43,33.81L36,3a1.26,1.26,0,0,0-1.3-1.08H34a1.29,1.29,0,0,0-1.22.73L23,23.51,13.28,2.61a1.32,1.32,0,0,0-1.21-.72h-.74A1.26,1.26,0,0,0,10,3L3,33.81v0A1.42,1.42,0,0,0,3.3,35,1.35,1.35,0,0,0,4.35,35.45Z"></path><path class="cls-1" d="M66.41,35.45h4.18a1.56,1.56,0,0,0,1.5-1.27l3.3-18.69,14.53,19.8a1.2,1.2,0,0,0,1.06.62h.74a1.56,1.56,0,0,0,1.5-1.23l5.44-30.9a1.2,1.2,0,0,0-.26-1,1.19,1.19,0,0,0-.93-.43H93.25a1.55,1.55,0,0,0-1.5,1.27L88.59,21.55,73.9,2.35a1.09,1.09,0,0,0-.75-.46h-1a1.56,1.56,0,0,0-1.49,1.22L65.22,34a1.23,1.23,0,0,0,.27,1A1.2,1.2,0,0,0,66.41,35.45Z"></path><path class="cls-1" d="M49.79,35.45h4.27a1.61,1.61,0,0,0,1.5-1.27s4-23,4.09-23.4-.4-.86-1.06-.58a4.87,4.87,0,0,1-4.68-1,.62.62,0,0,0-1,.41C52.75,10.27,48.6,34,48.6,34a1.21,1.21,0,0,0,1.19,1.44Z"></path><path class="cls-1" d="M57.59,7a3.48,3.48,0,1,0-3.48-3.48A3.49,3.49,0,0,0,57.59,7Z"></path><path class="cls-1" d="M114.25,10.2a4.92,4.92,0,0,1-1.44.22,4.84,4.84,0,0,1-3.24-1.23.62.62,0,0,0-1,.41c-.12.67-4.27,24.41-4.27,24.41a1.21,1.21,0,0,0,1.19,1.44h4.27a1.61,1.61,0,0,0,1.5-1.27s4-23,4.09-23.4S114.91,9.92,114.25,10.2Z"></path><path class="cls-1" d="M113.25,0a3.48,3.48,0,1,0,3.47,3.48A3.48,3.48,0,0,0,113.25,0Z"></path></g></g></svg>
+                        </h2>
+                        <div class="flex mb-6 space-x-1">
+                            <p class="text-xs font-semibold tracking-widest tr-right">@SHINJUKU</p>
+                            <p class="flex flex-col items-center text-lg font-medium leading-relaxed tracking-widest font-mplus"><span class="tracking-widest v-text font-mplus">新宿 </span> <span class="tracking-widest tr-right">NEWoMan</span>店</p>
+                        </div>
+                        <div class="store-btn">STORE INFO</div>
+                    </div>
+                </div>
+            </a>
+        </div>        
+    </section>
+
+    <section class="relative flex flex-col items-center ">
+        <div class="top-0 z-10 px-5 pb-4 bg-white md:absolute"><span class="text-xl font-semibold md:text-2xl">OUR BUSINESS</span></div>
+        <div class="grid w-full mx-auto max-w-7xl md:grid-cols-2 ">
+            <a href="#" class="relative flex items-center bg-blue-900 group">
+                <div class="flex-shrink-0 w-full">
+                    <div class=" main-bp-container">
+                        <div class="absolute inset-0 flex items-center">
+                            <img class="oc-pic" src="./assets/img/bg_our_mission_s.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-0 grid bg-black bg-opacity-25 md:ml-auto place-items-center">
+                    <div class="business-desc">
+                        <h2 class="flex flex-col items-center mb-4 text-xl font-semibold tracking-wider lg:text-4xl">
+                            <span></span>
+                        </h2>
+                        <div class="relative flex mb-6">
+                            <p class="text-lg font-medium leading-relaxed tracking-widest v-text font-mplus md:text-xl">私たちの役割</p>
+                            <p class="absolute text-xs font-semibold tracking-widest -right-5 tr-right">OUR BUSINESS</p>
+                        </div>
+                        <div class="store-btn-2">READ MORE</div>
+                    </div>
+                </div>
+            </a>
+            <div class="grid">
+                <a href="#" class="relative flex items-center bg-blue-900 group">
+                    <div class="flex-shrink-0 w-full">
+                        <div class=" sp-container-2">
+                            <div class="absolute inset-0 flex items-center">
+                                <img class="oc-pic" src="./assets/img/bg_retail.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 grid bg-black bg-opacity-25 md:ml-auto place-items-center">
+                        <div class="business-desc">
+                            <h2 class="flex flex-col items-center mb-4 text-xl font-semibold tracking-wider lg:text-4xl">
+                                <span></span>
+                            </h2>
+                            <div class="relative flex mb-6">
+                                <p class="text-lg font-medium leading-relaxed tracking-widest v-text font-mplus md:text-xl">リテール事業</p>
+                                <p class="absolute text-xs font-semibold tracking-widest -right-5 tr-right">RETAIL</p>
+                            </div>
+                            <div class="store-btn-2">READ MORE</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="relative flex items-center bg-blue-900 group">
+                    <div class="flex-shrink-0 w-full">
+                        <div class=" sp-container-2">
+                            <div class="absolute inset-0 flex items-center">
+                                <img class="oc-pic" src="./assets/img/bg_consal.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 grid bg-black bg-opacity-25 md:ml-auto place-items-center">
+                        <div class="business-desc">
+                            <h2 class="flex flex-col items-center mb-4 text-xl font-semibold tracking-wider lg:text-4xl">
+                                <span></span>
+                            </h2>
+                            <div class="relative flex mb-6">
+                                <p class="text-lg font-medium leading-relaxed tracking-widest v-text font-mplus md:text-xl"> パートナーシップ/ <br> コンサルティング事業</p>
+                                <p class="absolute text-xs font-semibold tracking-widest -right-5 tr-right">CONSULTING</p>
+                            </div>
+                            <div class="store-btn-2">READ MORE</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>        
+    </section>
+
+    <section class="flex flex-col px-5 md:py-28 place-items-start"  style="background-color: #FCF9EE;">
+        <div class="grid items-center w-full max-w-6xl mx-auto lg:grid-cols-2 lg:px-10">
+            <div class="flex flex-col items-start w-full py-12 lg:pr-12">
+                <h2 class="mb-4 text-xl font-semibold tracking-widest lg:text-2xl">RECRUIT</h2>
+                <h3 class="mb-6 font-semibold tracking-widest">
+                    ひとりの「おいしい！」から、<br>
+                    みんなの「うれしい！」を生み出す仕事。
+                </h3>
+                <p class="mb-3 text-xs leading-loose tracking-widest">
+                    私たちの生活にとって欠かすことのできない、“食”。<br>
+                    「おいしい」という喜びや感動を誰かと共有する時間は、言葉以上にみんなの心を通わせる力を持っているはずです。
+                </p>
+                <p class="mb-8 text-xs leading-loose tracking-widest">
+                    私たちFOOD&COMPANYは、そんな日常の「おいしい！」を、 <br>
+                    自分のためだけでなく、人と地球がよろこぶ形で実現していきたい。<br>
+                    そんな思いやりのある優しい選択を、<br>
+                    作る人、売る人、買う人、食べる人、みんなで手を取り合って、<br>
+                    積み重ねていきたいと考えています。
+                </p>
+                <a href="#" class="store-btn-3 hover:bg-blue-900 hover:text-white">READ MORE</a>
+            </div>
+            <div class="w-full h-full">
+                <img class="w-full cursor-pointer lg:h-full lg:object-center lg:object-cover" onclick="openImg(this)" src="assets/img/pic_recruit.jpg" alt="">
+            </div>
+        </div>        
+    </section>
+
+    <section class="grid px-5 py-20 place-items-center md:py-24 "  style="background-color: #FCF9EE;">
+        <div class="flex flex-col items-center w-full max-w-3xl mx-auto space-y-10 md:px-10">
+            <h2>
+                <svg class="text-black fill-current w-52 md:w-72" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499.63 83.78"><title>FOOD&amp;COMPANY</title><g><g><polygon class="cls-1" points="126.78 69.09 126.98 69.2 130.68 74.02 134.4 69.2 134.58 69.09 136.95 69.09 137.05 69.2 131.71 75.97 131.71 83.37 131.6 83.47 129.75 83.47 129.65 83.37 129.65 75.97 124.31 69.2 124.42 69.09 126.78 69.09"></polygon><path class="cls-1" d="M154.73,76.29a7.61,7.61,0,1,1-7.61-7.51,7.57,7.57,0,0,1,7.61,7.51m-12.84,0a5.24,5.24,0,1,0,5.23-5.35,5.28,5.28,0,0,0-5.23,5.35"></path><path class="cls-1" d="M160.59,69.09l.1.11v7.49c0,3.19,1.95,4.93,4.31,4.93s4.32-1.74,4.32-4.93V69.2l.1-.11h1.85l.1.11v7.9c0,4.21-2.87,6.68-6.37,6.68s-6.36-2.47-6.36-6.68V69.2l.1-.11Z"></path><path class="cls-1" d="M180,69.09c2.87,0,4.72,1.75,4.72,4.11a3.89,3.89,0,0,1-2.46,3.7L187,83.37l-.1.1h-2.47l-.1-.1-4.51-6.06H178v6.06l-.1.1H176l-.1-.1V69.2l.1-.11ZM178,75.26H180c1.54,0,2.36-.82,2.36-2.06s-.82-2-2.36-2H178Z"></path><path class="cls-1" d="M201.59,69.1a7.2,7.2,0,1,1,0,14.37h-4.83l-.1-.1V69.2l.1-.1Zm-2.88,12.32h2.88a5.14,5.14,0,1,0,0-10.27h-2.88Z"></path><path class="cls-1" d="M219.37,69.09l.1.11,5.75,14.17-.1.1h-2.06l-.1-.1-1.33-3.28h-6.37l-1.34,3.28-.1.1h-2l-.11-.1,5.75-14.17.11-.11ZM216.08,78h4.73L218.44,72Z"></path><polygon class="cls-1" points="230.26 69.09 230.37 69.2 230.37 83.37 230.26 83.47 228.41 83.47 228.31 83.37 228.31 69.2 228.41 69.09 230.26 69.09"></polygon><polygon class="cls-1" points="236.86 69.09 236.94 69.18 236.94 81.42 243.64 81.42 243.72 81.52 243.72 83.39 243.64 83.47 234.97 83.47 234.89 83.39 234.89 69.18 234.97 69.09 236.86 69.09"></polygon><polygon class="cls-1" points="248.25 69.09 248.45 69.2 252.15 74.02 255.87 69.2 256.05 69.09 258.41 69.09 258.52 69.2 253.18 75.97 253.18 83.37 253.07 83.47 251.22 83.47 251.12 83.37 251.12 75.97 245.78 69.2 245.88 69.09 248.25 69.09"></polygon><path class="cls-1" d="M280.41,72.59a7.47,7.47,0,0,0-5-1.65,5.34,5.34,0,1,0,.11,10.68,7.23,7.23,0,0,0,3.18-.71v-3.5h-2.77l-.11-.1V75.46l.11-.1h4.72l.1.1v6.68a8.79,8.79,0,0,1-5.23,1.64,7.51,7.51,0,1,1-.11-15,8.44,8.44,0,0,1,5.14,1.34v2.36Z"></path><path class="cls-1" d="M289.15,69.09c2.87,0,4.72,1.75,4.72,4.11a3.9,3.9,0,0,1-2.46,3.7l4.72,6.47-.11.1h-2.46l-.1-.1-4.52-6.06h-1.85v6.06l-.1.1h-1.85l-.11-.1V69.2l.11-.11Zm-2.06,6.17h2.06c1.54,0,2.35-.82,2.35-2.06s-.81-2-2.35-2h-2.06Z"></path><path class="cls-1" d="M313.8,76.29a7.6,7.6,0,1,1-7.6-7.51,7.56,7.56,0,0,1,7.6,7.51m-12.84,0a5.24,5.24,0,1,0,5.24-5.35A5.28,5.28,0,0,0,301,76.29"></path><path class="cls-1" d="M329.53,72.79a7.67,7.67,0,0,0-4.83-1.85,5.34,5.34,0,0,0,0,10.68,7.61,7.61,0,0,0,4.83-1.85l.1.11v2.36a8.29,8.29,0,0,1-4.93,1.54,7.5,7.5,0,1,1,0-15,8.23,8.23,0,0,1,4.93,1.55v2.36Z"></path><polygon class="cls-1" points="342.48 69.09 342.58 69.2 342.58 71.05 342.48 71.15 335.8 71.15 335.8 74.54 340.83 74.54 340.94 74.64 340.94 76.49 340.83 76.59 335.8 76.59 335.8 81.42 343.09 81.42 343.19 81.52 343.19 83.37 343.09 83.47 333.85 83.47 333.74 83.37 333.74 69.2 333.85 69.09 342.48 69.09"></polygon><path class="cls-1" d="M351,69.09c2.87,0,4.72,1.75,4.72,4.11a3.89,3.89,0,0,1-2.46,3.7L358,83.37l-.1.1h-2.47l-.1-.1-4.52-6.06H349v6.06l-.1.1H347l-.1-.1V69.2l.1-.11ZM349,75.26H351c1.54,0,2.36-.82,2.36-2.06s-.82-2-2.36-2H349Z"></path><polygon class="cls-1" points="362.11 69.09 362.31 69.2 366.01 74.02 369.73 69.2 369.91 69.09 372.28 69.09 372.38 69.2 367.04 75.97 367.04 83.37 366.94 83.47 365.09 83.47 364.98 83.37 364.98 75.97 359.65 69.2 359.75 69.09 362.11 69.09"></polygon><polygon class="cls-1" points="5.16 35.15 0.49 35.15 0 34.66 0 1.21 0.49 0.72 20.99 0.72 21.48 1.21 21.48 5.88 20.99 6.37 5.65 6.37 5.65 13.43 17.15 13.43 17.64 13.92 17.64 18.59 17.15 19.08 5.65 19.08 5.65 34.66 5.16 35.15"></polygon><path class="cls-1" d="M51.07,35.87A18.09,18.09,0,0,1,32.89,17.93a18.18,18.18,0,0,1,36.35,0A18.08,18.08,0,0,1,51.07,35.87m0-30a11.94,11.94,0,0,0-11.8,12,11.8,11.8,0,1,0,23.6,0,11.94,11.94,0,0,0-11.8-12"></path><path class="cls-1" d="M98.26,35.87A18.09,18.09,0,0,1,80.08,17.93a18.18,18.18,0,0,1,36.35,0A18.08,18.08,0,0,1,98.26,35.87m0-30a11.94,11.94,0,0,0-11.8,12,11.8,11.8,0,1,0,23.6,0,11.94,11.94,0,0,0-11.8-12"></path><path class="cls-1" d="M142.38,35.15H130.93l-.49-.49V1.21l.49-.49h11.45c10.36,0,18.17,7.4,18.17,17.21s-7.81,17.22-18.17,17.22m-6.29-5.65h6.29c6.84,0,11.8-4.87,11.8-11.57s-5-11.56-11.8-11.56h-6.29Z"></path><path class="cls-1" d="M199.34,32.32H176.15V28.21h23.19Zm-2.55-18.91a29,29,0,0,1-3.08,6.17c1.85,1.85,2.87,2.87,5.13,5.09l-.2.25h-5.55A16.36,16.36,0,0,1,191,23.07c-1.84,1.85-3.08,2.47-6.16,2.47a6.73,6.73,0,0,1-7-6.46c0-2.59,1.23-4,3.49-5.88-1.23-1.43-2.26-2.46-2.26-4.52a6.18,6.18,0,0,1,12.33,0c0,2.47-1.44,3.7-3.28,5.14a30.87,30.87,0,0,0,2.46,2.67,12.33,12.33,0,0,0,1.65-3.29h4.36ZM182.2,19.08a2.53,2.53,0,0,0,2.67,2.35A3.47,3.47,0,0,0,188,20c-1.64-1.65-2.06-2.06-3.9-4.11-1,1-1.85,1.64-1.85,3.2m4.93-10.4A1.75,1.75,0,0,0,185.28,7a1.78,1.78,0,0,0-1.85,1.64c0,1,.62,1.85,1.64,2.88,1.65-1,2.06-1.85,2.06-2.88"></path><path class="cls-1" d="M230.49,35.87a18.08,18.08,0,0,1-18.17-17.94A18.08,18.08,0,0,1,230.49,0a19.62,19.62,0,0,1,11.76,3.68l.18.13V9.72l-.64.64-.3-.25a17.42,17.42,0,0,0-11-4.22,11.94,11.94,0,0,0-11.8,12A12,12,0,0,0,230.49,30a17.42,17.42,0,0,0,11-4.22l.3-.25.64.64v5.91l-.18.13a19.62,19.62,0,0,1-11.76,3.68"></path><path class="cls-1" d="M273.65,35.87a18.08,18.08,0,0,1-18.17-17.94,18.18,18.18,0,0,1,36.35,0,18.08,18.08,0,0,1-18.18,17.94m0-30a12,12,0,0,0-11.8,12,11.8,11.8,0,1,0,23.6,0,11.94,11.94,0,0,0-11.8-12"></path><polygon class="cls-1" points="338.81 35.15 334.14 35.15 333.65 34.66 333.65 9.33 322.5 19.73 321.68 19.73 310.53 9.33 310.53 34.66 310.04 35.15 305.37 35.15 304.88 34.66 304.88 1.21 305.37 0.72 309.81 0.77 310.39 1.08 322.09 12 333.89 1.01 334.56 0.72 338.81 0.72 339.3 1.21 339.3 34.66 338.81 35.15"></polygon><path class="cls-1" d="M359,35.15h-4.67l-.49-.49V1.24l.42-.52h10.56c6.81,0,11.94,4.62,11.94,10.74S371.58,22.2,364.77,22.2h-5.32V34.66Zm.5-18.61h5.32c3.28,0,5.57-2.08,5.57-5.08s-2.29-5.09-5.57-5.09h-5.32Z"></path><path class="cls-1" d="M413.63,35.15h-5.15l-.47-.51-3-7.41H390.72l-3.11,7.55-.36.37H382.1l-.57-.57L395.16,1.09l.37-.37h4.67l.46.51,13.53,33.35ZM393,21.58h9.78L397.86,9Z"></path><polygon class="cls-1" points="456.31 35.15 451.38 35.1 450.75 34.74 431.86 10.08 431.86 34.66 431.37 35.15 426.7 35.15 426.21 34.66 426.21 1.21 426.7 0.72 431.62 0.77 432.25 1.13 451.15 25.79 451.15 1.21 451.64 0.72 456.31 0.72 456.8 1.21 456.8 34.66 456.31 35.15"></polygon><polygon class="cls-1" points="486.52 35.15 481.85 35.15 481.36 34.66 481.36 17.36 468.75 1.36 469.38 0.72 475.26 0.72 475.89 1.13 484.19 11.96 492.66 1.01 493.3 0.72 498.99 0.72 499.63 1.36 487.01 17.36 487.01 34.66 486.52 35.15"></polygon></g></g></svg>                
+            </h2>
+            <ul class="z-20 flex flex-wrap items-center justify-center space-x-4 text-xs text-center">
+                <li class="mb-4"><a href="#" class="tracking-widest">ABOUT</a></li>
+                <li class="mb-4"><a href="#" class="tracking-widest">STORE</a></li>
+                <li class="mb-4"><a href="#" class="tracking-widest">INFORMATION</a></li>
+                <li class="mb-4"><a href="#" class="tracking-widest">OUR BUSINESS</a></li>
+                <li class="mb-4"><a href="#" class="tracking-widest">RECRUIT</a></li>
+                <li class="mb-4"><a href="#" class="tracking-widest">CONTACT</a></li>
+                <li class="mb-4"><a href="#" class="tracking-widest">ONLINE STORE</a></li>
+                <li class="mb-4"><a href="#" class="tracking-widest">COMPANY INFO</a></li>
+                <li class="mb-4"><a href="#" class="tracking-widest">PRIVACY POLICY</a></li>
+            </ul>
+            <h5 class="text-xs tracking-widest">COPYRIGHT FOOD&COMPANY. ALL RIGHTS RESERVED.</h5>
+        </div>        
+    </section>
+    
+    <div id='imgModal' class="fixed inset-0 z-40 hidden bg-black bg-opacity-50 place-items-center">
+        <div onclick="closeImg()" class="w-full h-full"></div>
+        <img class="absolute w-full max-w-6xl" src="./assets/img/0114_IMG_1358_HH-800x800.jpg" alt="">
+    </div>
+    
+  
+    
+    <script src="./assets/js/index.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
